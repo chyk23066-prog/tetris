@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tetris</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
+
+  <!-- p5.js（ローカル） -->
+  <script src="p5.min.js"></script>
+
+  <!-- ===== core ===== -->
+  <script src="core/Random.js"></script>
+  <script src="core/Board.js"></script>
+  <script src="core/EventBus.js"></script>
+  <script src="core/ScoreManager.js"></script>
+  <script src="core/Game.js"></script>
+  <script src="core/GameManager.js"></script>
+  <script src="core/InputHandler.js"></script>
+  <script src="core/Renderer.js"></script>
+
+  <!-- effect -->
+ <script src="effect/Effect.js"></script>
+ <script src="effect/CrossBomb.js"></script>
+ <script src="effect/GravityBomb.js"></script>
+ <script src="effect/HorizontalBomb.js"></script>
+ <script src="effect/SquareBomb.js"></script>
+ <script src="effect/VerticalBomb.js"></script>
+
+  <!-- ===== Renderer（拡張） ===== -->
+  <script src="core/MenuRenderer.js"></script>
+  <script src="core/OptionRenderer.js"></script>
+  <script src="core/PauseRenderer.js"></script>
+
+  <!-- ===== state ===== -->
+  <script src="state/State.js"></script>
+  <script src="state/MenuState.js"></script>
+  <script src="state/OptionState.js"></script>
+  <script src="state/PlayState.js"></script>
+  <script src="state/PauseState.js"></script>
+  <script src="state/ReplayState.js"></script>
+  <script src="state/GameOverState.js"></script>
+
+  <!-- ===== polyomino ===== -->
+  <script src="polyomino/Polyomino.js"></script>
+  <script src="polyomino/Tetromino.js"></script>
+  <script src="polyomino/Pentomino.js"></script>
+  <script src="polyomino/Hexomino.js"></script>
+
+  <!-- ===== polyFactory ===== -->
+  <script src="polyFactory/PolyominoFactory.js"></script>
+  <script src="polyFactory/TetrominoFactory.js"></script>
+  <script src="polyFactory/PentominoFactory.js"></script>
+  <script src="polyFactory/HexominoFactory.js"></script>
+
+  <!-- ===== command ===== -->
+  <script src="command/Command.js"></script>
+
+  <!-- ===== sketch ===== -->
+  <script src="sketch.js"></script>
+</head>
+<body>
+</body>
+</html>
